@@ -1855,7 +1855,7 @@ Failed to reset the connection to the server due to following error:
         """
         notices = ''
         # Check for notices.
-        if self.conn.notices and self.__notices is not None:
+        if self.conn and self.conn.notices and self.__notices is not None:
             self.__notices.extend(self.conn.notices)
             self.conn.notices.clear()
 

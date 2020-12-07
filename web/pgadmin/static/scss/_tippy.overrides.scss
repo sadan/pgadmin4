@@ -1,0 +1,15 @@
+// $popover-bg: $color-gray-dark !default;
+// $popover-body-color: $white !default;
+// $popover-border-color: $dropdown-border-color;
+// $popover-box-shadow: $dropdown-box-shadow;
+
+@import "~node_modules/tippy.js/dist/tippy.css";
+
+.tippy-box {
+  background-color: $popover-bg;
+  color: $popover-body-color;
+  // border: 1px solid $popover-border-color;
+  .tippy-arrow {
+    color: $popover-bg;
+  }
+}
