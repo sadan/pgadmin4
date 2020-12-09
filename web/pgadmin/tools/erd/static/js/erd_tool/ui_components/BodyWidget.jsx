@@ -80,6 +80,7 @@ export default class BodyWidget extends React.Component {
     this.onOneToManyClick = this.onOneToManyClick.bind(this);
     this.onManyToManyClick = this.onManyToManyClick.bind(this);
     this.onAutoDistribute = this.onAutoDistribute.bind(this);
+    this.onDetailsToggle = this.onDetailsToggle.bind(this);
     this.diagram.zoomToFit = this.diagram.zoomToFit.bind(this.diagram);
     this.diagram.zoomIn = this.diagram.zoomIn.bind(this.diagram);
     this.diagram.zoomOut = this.diagram.zoomOut.bind(this.diagram);
