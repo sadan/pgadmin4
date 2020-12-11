@@ -190,8 +190,8 @@ RUN groupadd -g 5050 pgadmin && \
     mkdir -p /var/log/pgadmin && \
     chown pgadmin:pgadmin /var/log/pgadmin && \
     touch /pgadmin4/config_distro.py && \
-    chown pgadmin:pgadmin /pgadmin4/config_distro.py && \
-    setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/python3.8
+    chown pgadmin:pgadmin /pgadmin4/config_distro.py
+#    setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/python3.8  To avoid low ports
 USER pgadmin
 
 # Finish up
